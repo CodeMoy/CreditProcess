@@ -1,0 +1,3 @@
+﻿D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\Interfaces\ICardValidationService.cs
+D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\ServiceRegistration.cs
+D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\Services\CardValidationService.cs

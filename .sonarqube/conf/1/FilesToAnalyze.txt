@@ -1,0 +1,4 @@
+﻿D:\OppNet\CreditProcess\CreditProcess.Domain\Constants\CardType.cs
+D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\BaseEntity.cs
+D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\CreditCardDetails.cs
+D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\User.cs
