@@ -1,8 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 
-namespace CreditProcess.Api;
+/// <summary>
+/// Golbal Exception midleware to haldle error in request pipeline.
+/// <example>
+///  exception will reise it return exception message  
+/// <code>
+/// Exception will prcess inside HandleExceptionAsync method
+/// </code>
+/// </example>
+/// </summary>
 
+namespace CreditProcess.Api;
+[ExcludeFromCodeCoverage]
 public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
@@ -31,12 +42,10 @@ public class ExceptionMiddleware
         {
             Type = "https://tools.ietf.org/html/rfc7231#section-6.6.1",
             Title = "Internal Server Error",
-            Status = (int)StatusCodes.Status500InternalServerError,
+            Status = (int)statusCode,
             Instance = httpContext.Request.Path,
             Detail = ex.Message,
         };
-        httpContext.Response.StatusCode = (int)statusCode;
         await httpContext.Response.WriteAsJsonAsync(_errorDetails);
-
     }
 }

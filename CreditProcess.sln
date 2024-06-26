@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditProcess.ApplicationCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditProcess.Api", "CreditProcess.Api\CreditProcess.Api.csproj", "{46836B0D-578D-4EBC-A37A-8E09E39FDCAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditProcess.Api.Test", "CreditProcess.Api.Test\CreditProcess.Api.Test.csproj", "{F780A18C-F941-46E7-B454-2F7FEA6D5F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditProcess.Api.Test", "CreditProcess.Api.Test\CreditProcess.Api.Test.csproj", "{F780A18C-F941-46E7-B454-2F7FEA6D5F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditProcess.Services.Test", "CreditProcess.Services.Test\CreditProcess.Services.Test.csproj", "{08929FE6-6904-4329-A440-C3E4FC91F4EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditProcess.Services.Test", "CreditProcess.Services.Test\CreditProcess.Services.Test.csproj", "{08929FE6-6904-4329-A440-C3E4FC91F4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditProcess.ApplicationCoreTests", "CreditProcess.ApplicationCoreTests\CreditProcess.ApplicationCoreTests.csproj", "{66277E5A-A537-49C5-BB01-BE9472DC1E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{08929FE6-6904-4329-A440-C3E4FC91F4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08929FE6-6904-4329-A440-C3E4FC91F4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08929FE6-6904-4329-A440-C3E4FC91F4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66277E5A-A537-49C5-BB01-BE9472DC1E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66277E5A-A537-49C5-BB01-BE9472DC1E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66277E5A-A537-49C5-BB01-BE9472DC1E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66277E5A-A537-49C5-BB01-BE9472DC1E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

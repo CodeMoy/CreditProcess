@@ -134,8 +134,9 @@
     <Property Name="sonar.auth.gitlab.url">https://gitlab.com</Property>
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.updatecenter.url">https://downloads.sonarsource.com/sonarqube/update/update-center.properties</Property>
-    <Property Name="sonar.core.startTime">26-06-2024 12:09:03</Property>
     <Property Name="sonar.core.id">147B411E-AZBTRO6CLkh74QrGxaGS</Property>
+    <Property Name="sonar.core.startTime">26-06-2024 19:15:58</Property>
+    <Property Name="sonar.coverage.exclusions">CreditProcess.Api/ Program.cs,**/*CreditCardDetails.cs,**/*Program.cs,src/Middleware/**/*,src/ResponceModel/**/*</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>

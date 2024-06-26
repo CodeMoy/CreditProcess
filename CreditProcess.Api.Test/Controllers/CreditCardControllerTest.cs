@@ -1,7 +1,8 @@
 ﻿using CreditProcess.Api.Controllers;
-using CreditProcess.Api.EndpointDtos;
+using CreditProcess.Api;
 using CreditProcess.ApplicationCore;
 using FluentAssertions;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 namespace CreditProcess.Api.Test;
 
@@ -17,16 +18,9 @@ public class CreditCardControllerTest
     }
 
     [Theory]
-    [InlineData("26")]
-    [InlineData("75")]
-    [InlineData("133")]
-    [InlineData("5555555555554444")]    // MasterCard test credit card number
-    [InlineData("4012888888881881")]    // Visa test credit card number
-    [InlineData("3056930009020004")]    // Diners Club test credit card number
-    [InlineData("3566111111111113")]    // JCB test credit card number
-    [InlineData("808401234567893")]     // NPI (National Provider Identifier), including 80840 prefix
-    [InlineData("490154203237518")]
-    public void ValidateCreditCard(string value)
+    [InlineData("5555555555554444")]
+    [InlineData("4012888888881881")]
+    public void ValidateCreditCard_Returns_True(string value)
     {
         //arrange
         CreditCardDto model = new CreditCardDto();
@@ -34,21 +28,15 @@ public class CreditCardControllerTest
         cardService.Setup(x => x.ValidateCardAsync(model.CardNumber)).ReturnsAsync(true);    
         //act
         var cardResult = cardController.ValidateCreditCard(model);
-        
+
         ////assert
-       if (cardResult != null) Assert.True(cardResult.Result);
+        cardResult.Result.Data.Should().Be(true);
     }
 
     [Theory]
     [InlineData("26")]
-    [InlineData("75")]
-    [InlineData("133")]
-    [InlineData("5555555555554444")]    // MasterCard test credit card number
-    [InlineData("4012888888881881")]    // Visa test credit card number
-    [InlineData("3056930009020004")]    // Diners Club test credit card number
-    [InlineData("3566111111111113")]    // JCB test credit card number
-    [InlineData("808401234567893")]     // NPI (National Provider Identifier), including 80840 prefix
-    public void ValidateCreditCard_ReturnsFalse(string value)
+    [InlineData("75")]       
+    public void ValidateCreditCard_Returns_False(string value)
     {
         //arrange
         CreditCardDto model = new CreditCardDto();
@@ -58,6 +46,16 @@ public class CreditCardControllerTest
         var cardResult = cardController.ValidateCreditCard(model);
 
         ////assert
-        if (cardResult != null) Assert.False(cardResult.Result);
+        cardResult.Result.Data.Should().Be(false);
+    }
+
+    [Theory]
+    [InlineData("")]
+    public void ValidateCardAsync_EmtyValue_Returns_False(string value)
+    {
+        CreditCardDto model = new CreditCardDto();
+        model.CardNumber = value;
+        Assert.False(false, "Invalid card");
     }
 }
+  

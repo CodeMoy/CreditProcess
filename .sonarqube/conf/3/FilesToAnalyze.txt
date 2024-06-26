@@ -1,7 +1,8 @@
 ﻿D:\OppNet\CreditProcess\CreditProcess.Api\ApiServiceRegister.cs
 D:\OppNet\CreditProcess\CreditProcess.Api\Controllers\CreditCardController.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\EndpointDtos\CreditCardDto.cs
+D:\OppNet\CreditProcess\CreditProcess.Api\Middleware\ExceptionMiddleware.cs
 D:\OppNet\CreditProcess\CreditProcess.Api\Program.cs
+D:\OppNet\CreditProcess\CreditProcess.Api\ResponceModel\ApiResponse.cs
 D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\CreditProcess.Api.GlobalUsings.g.cs
 D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\CreditProcess.Api.AssemblyInfo.cs

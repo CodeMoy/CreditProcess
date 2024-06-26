@@ -1,4 +1,4 @@
-﻿D:\OppNet\CreditProcess\CreditProcess.Domain\Constants\CardType.cs
-D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\BaseEntity.cs
-D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\CreditCardDetails.cs
-D:\OppNet\CreditProcess\CreditProcess.Domain\Entities\User.cs
+﻿D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\Interfaces\ICardValidationService.cs
+D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\RequestModel\CreditCardDto.cs
+D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\ServiceRegistration.cs
+D:\OppNet\CreditProcess\CreditProcess.ApplicationCore\Services\CardValidationService.cs
