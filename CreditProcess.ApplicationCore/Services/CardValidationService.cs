@@ -3,6 +3,10 @@ public class CardValidationService : ICardValidationService
 {
     public async Task<bool> ValidateCardAsync(string cardNumber)
     {
+        if (String.IsNullOrEmpty(cardNumber) || cardNumber.Length < 2)
+        {
+            return false;
+        }
         var result = await Task.Run(() => ValidateUsingLuhn(cardNumber));
         return result;
     }

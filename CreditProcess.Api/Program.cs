@@ -13,6 +13,8 @@ var app = builder.Build();
     app.MapControllers();
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseMiddleware<ExceptionMiddleware>();
+
     app.Run();
 }
 
