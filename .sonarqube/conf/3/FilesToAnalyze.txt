@@ -1,12 +1,8 @@
-﻿D:\OppNet\CreditProcess\CreditProcess.Api\ApiServiceRegister.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\Controllers\CreditCardController.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\Middleware\ExceptionMiddleware.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\Program.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\ResponceModel\ApiResponse.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\CreditProcess.Api.GlobalUsings.g.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\CreditProcess.Api.AssemblyInfo.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\obj\Debug\net7.0\CreditProcess.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\OppNet\CreditProcess\CreditProcess.Api\appsettings.Development.json
-D:\OppNet\CreditProcess\CreditProcess.Api\appsettings.json
-D:\OppNet\CreditProcess\CreditProcess.Api\Properties\launchSettings.json
+﻿D:\OppNet\CreditProcess\CreditProcess.ApplicationCoreTests\Services\CardValidationServiceTests.cs
+C:\Users\TANMOY DEY\.nuget\packages\microsoft.net.test.sdk\17.5.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\TANMOY DEY\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\TANMOY DEY\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.dll
+C:\Users\TANMOY DEY\.nuget\packages\mstest.testadapter\2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\TANMOY DEY\.nuget\packages\mstest.testadapter\2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\TANMOY DEY\.nuget\packages\mstest.testadapter\2.2.10\build\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\TANMOY DEY\.nuget\packages\mstest.testadapter\2.2.10\build\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
